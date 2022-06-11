@@ -129,5 +129,6 @@ main {
     .showcase {
         flex-direction: column;
         align-items: center;
+        gap : 100px;
     }
 }
