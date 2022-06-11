@@ -8,7 +8,6 @@ main {
 
 #introImage {
     object-fit: cover;
-    background-color: ;
     width: 100%;
     height: 300px;
 }
@@ -35,21 +34,45 @@ main {
 }
 
 .part2 {
-    margin: 0 20px;
+    margin: 0 75px;
 }
 
 .ingr {
     align-items: center;
     display: flex;
+    gap: 100px;
 }
 
-#title2 {
+.container {
+    align-items: flex-end;
+}
+
+.container #title2 {
     color: #704E2E;
-    text-align: left;
+    text-align: right;
 }
 
-#text2 {
+.container #text2 {
+    text-align: justify;
+    text-justify: inter-word;
     font-size: 20px;
     color: #786851;
-    text-align: right;
+}
+
+.space {
+    height: 30px;
+}
+
+@media(max-width:800px) {
+    .ingr {
+        flex-direction: column;
+    }
+
+    .container #text2  {
+        text-align: center;
+    }
+
+    .container #title2 {
+        text-align: center;
+    }
 }
