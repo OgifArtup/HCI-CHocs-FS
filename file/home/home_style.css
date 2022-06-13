@@ -22,11 +22,16 @@ main {
     height: 400px;
 }
 
-.best p {
+.best_txt {
     position: absolute;
-    color: #F0E7DD;
+    padding-top: 600px;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.best p {
+    color: #F0E7DD;
 }
 
 .best #best_seller {
@@ -83,4 +88,14 @@ main {
     object-fit: cover;
     width: 300px;
     height: 300px;
+}
+
+@media(max-width:800px){
+    .view {
+        padding: 0;
+    }
+
+    #best_seller {
+        margin-top: 2px;
+    }
 }
