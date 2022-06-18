@@ -1,24 +1,50 @@
-.intro_img img{
-    width: 100%;
+main {
+    margin-top: 65px;
+    padding-bottom: 50px;
 }
 
-main {
-    padding-bottom: 50px;
+.intro_txt{
+    position: absolute;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #F0E7DD;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.intro_txt p{
+    text-align: center;
+    font-size: 32px;
+}
+
+.intro_img {
+    height: 730px;
+}
+
+.intro_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
 }
 
 .info {
     text-align: center;
     padding: 30px 70px;
+    background-color: #786851;
+    color: #F0E7DD;
 }
 
 #short_info {
-    margin: 10px 20%;
+    margin: 10px 10%;
 }
 
 .best {
-    margin: 30px 70px;
+    margin: 70px;
     text-align: center;
-    background-color: black;
+    background-color: #786851;
     height: 400px;
 }
 
@@ -52,10 +78,9 @@ main {
 }
 
 .recommend {
-    color: #F0E7DD;
-    padding: 30px 70px;
+    padding: 0 70px;
     text-align: center;
-    background-color: #704E2E;
+    padding-bottom: 50px;
 }
 
 .title {
@@ -66,11 +91,14 @@ main {
 .prod_box {
     display: inline-block;
     margin: 30px 10px;
+    width: 300px;
+    background-color: white;
 }
 
 .prod_box p {
     font-size: 20px;
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .view {
@@ -79,20 +107,51 @@ main {
 
 #view_button {
     padding: 15px 0;
-    background-color: #CCD6DD;
+    background-color: #786851;
     font-weight: 500;
-    color: black;
+    color: #F0E7DD;
+    transition: all 0.3s ease-in-out;
+}
+
+#view_button:hover {
+    background-color: #704E2E;
 }
 
 #prod_img {
     object-fit: cover;
     width: 300px;
-    height: 300px;
+    height: 500px;
 }
 
 @media(max-width:800px){
+    .recommend{
+        padding: 0 20px;
+    }
+
+    .prod_box{
+        width: 200px;
+        margin: 30px 5px;
+    }
+
+    #prod_img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .prod_box p {
+        font-size: 18px;
+    }
+
+    .info{
+        padding: 30px;
+    }
+    
+    #short_info {
+        margin: 10px 2%;
+    }
+
     .view {
-        padding: 0;
+        padding: 0 20%;
     }
 
     #best_seller {
