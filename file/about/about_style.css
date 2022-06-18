@@ -140,19 +140,24 @@ main {
         height: 300px;
     }
     
-    
     .showcase {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
     }
     
     .showimg {
         text-align: center;
-        margin-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .showimg img {
+        width: 300px;
+        height: 300px;
     }
 
     .showtxt {
+        height: 300px;
+        width: 300px;
         opacity: 1;
     }
 }
