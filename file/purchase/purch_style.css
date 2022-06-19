@@ -2,21 +2,25 @@ main {
     padding-top: 65px;
 }
 
-main h1 {
-    padding: 20px 0;
-    text-align: center;
-}
-
 button:hover {
     cursor: pointer;
+}
+
+.f {
+    padding: 70px 0;
 }
 
 form {
     background-color: white;
     margin: auto;
     width: 60%;
-    padding: 50px;
+    padding: 0 50px;
     color: black;
+}
+
+form h1 {
+    padding: 40px 0;
+    text-align: center;
 }
 
 .container, .name, .num, .adr, .price, .date, .email{
@@ -34,10 +38,14 @@ form {
     margin-top: 5px;
 }
 
-.cont {
+.container {
+
+}
+
+.cont label{
     gap: 10px;
+    display:flex;
     align-items: center;
-    display: flex;
     padding-bottom: 10px;
 }
 
@@ -52,12 +60,7 @@ form {
     width: 20px;
 }
 
-.price {
-    display: flex;
-    justify-content: space-between;
-}
-
-.errorMsg {
+#errorMsg {
     padding: 20px;
     text-align: center;
     color: red;
@@ -68,6 +71,13 @@ form {
 }
 
 #order {
+    margin-bottom: 40px;
     padding: 10px;
     width: 100px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }

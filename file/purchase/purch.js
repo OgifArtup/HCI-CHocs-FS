@@ -137,7 +137,79 @@ const phonenum = document.getElementById('phoneNum');
 const adr = document.getElementById('adr');
 const date = document.getElementById('date');
 const email = document.getElementById('email');
+const check1 = document.querySelector('#prod1');
+const check2 = document.querySelector('#prod2');
+const check3 = document.querySelector('#prod3');
+const check4 = document.querySelector('#prod4');
+const check5 = document.querySelector('#prod5');
+const check6 = document.querySelector('#prod6');
+const check7 = document.querySelector('#prod7');
+const check8 = document.querySelector('#prod8');
+const check9 = document.querySelector('#prod9');
+const check10 = document.querySelector('#prod10');
 const errorElmnt = document.getElementById('errorMsg');
+
+function validateCheckBox(){
+    if(check1.checked){
+        if(quantity1 < 1){
+            return false;
+        }
+    }
+    
+    if(check2.checked){
+        if(quantity2 < 1){
+            return false;
+        }
+    }
+    
+    if(check3.checked){
+        if(quantity3 < 1){
+            return false;
+        }
+    }
+    
+    if(check4.checked){
+        if(quantity4 < 1){
+            return false;
+        }
+    }
+    
+    if(check5.checked){
+        if(quantity5 < 1){
+            return false;
+        }
+    }
+    
+    if(check6.checked){
+        if(quantity6 < 1){
+            return false;
+        }
+    }
+    
+    if(check7.checked){
+        if(quantity7 < 1){
+            return false;
+        }
+    }
+    
+    if(check8.checked){
+        if(quantity8 < 1){
+            return false;
+        }
+    }
+    
+    if(check9.checked){
+        if(quantity9 < 1){
+            return false;
+        }
+    }
+    
+    if(check10.checked){
+        if(quantity10 < 1){
+            return false;
+        }
+    }
+}
 
 form.addEventListener('submit', (e) => {
     let msg = []
@@ -150,7 +222,7 @@ form.addEventListener('submit', (e) => {
     }
 
     if (!isNaN(name.value)){
-        msg.push('Name must not contain any number!')
+        msg.push('Name must only contain alphabets!')
     }
 
     if (adr.value === ''){
@@ -177,8 +249,26 @@ form.addEventListener('submit', (e) => {
         msg.push('Please choose the delivery date!')
     }
 
+    if (!check1.checked && !check2.checked && !check3.checked && !check4.checked && !check5.checked && !check6.checked && !check7.checked && !check8.checked && !check9.checked && !check10.checked){
+        msg.push('Choose atleast 1 product!')
+    }
+
+    if (validateCheckBox() == false){
+        msg.push('Chosen Product Quantity must be above 0!')
+    }
+
     if(msg.length > 0){
         e.preventDefault()
         errorElmnt.innerText = msg.join('\n')
     }
 })
+
+var totalPrice = 100;
+function countTotal(num){
+    totalPrice += num;
+    return total;
+}
+
+function getTotal(){
+    return totalPrice;
+}
