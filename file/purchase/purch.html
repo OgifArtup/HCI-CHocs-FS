@@ -31,8 +31,7 @@
 
     <main>
         <h1>Purchase</h1>
-        <form action=""></form>
-        <div class="form">
+        <form action="">
             <div class="name">
                 <label for="name"><h3>Full name</h3></label>
                 <input type="text" placeholder="Ex : James Bond">
@@ -41,6 +40,7 @@
             <div class="adr">
                 <label for="name"><h3>Address</h3></label>
                 <input type="text" placeholder="Country, City, Street Address, Postcode">
+                <textarea name="" id="" placeholder="Address Detail (Optional) Ex : House Wall Color"></textarea>
             </div>
 
             <div class="num">
@@ -53,16 +53,22 @@
                 <input type="email" placeholder="Ex : james.bond@gmail.com">
             </div>
 
+            <div class="date">
+                <label for="name"><h3>Delivery Date</h3></label>
+                <input type="Date" required>
+            </div>
+
             <div class="prod">
                 <div class="container">
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
-                        <label for="prod"><h3>Belgian Chocolate</h3></label>
+                        <label for="prod"><h3>Chocolate Bricks</h3></label>
+                        <h3 id="itemPrice1">Rp 200.000</h3>
                     </div>
                     <div class="quantity">
-                        <button id="minus1" onclick="decrement1()">-</button>
+                        <button type="button" id="minus1" onclick="decrement1()">-</button>
                         <h3 id="itemQuantity1"></h3>
-                        <button id="plus1" onclick="increment1()">+</button>
+                        <button type="button" id="plus1" onclick="increment1()">+</button>
                     </div>
                 </div>
 
@@ -70,11 +76,12 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Blocks</h3></label>
+                        <h3 id="itemPrice2">Rp 150.000</h3>
                     </div>
                     <div class="quantity">
-                        <button onclick="decrement2()">-</button>
+                        <button type="button" onclick="decrement2()">-</button>
                         <h3 id="itemQuantity2"></h3>
-                        <button onclick="increment2()">+</button>
+                        <button type="button" onclick="increment2()">+</button>
                     </div>
                 </div>
 
@@ -82,11 +89,12 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Balls</h3></label>
+                        <h3 id="itemPrice3">Rp 25.000</h3>
                     </div>
                     <div class="quantity">
-                        <button onclick="decrement3()">-</button>
+                        <button type="button" onclick="decrement3()">-</button>
                         <h3 id="itemQuantity3"></h3>
-                        <button onclick="increment3()">+</button>
+                        <button type="button" onclick="increment3()">+</button>
                     </div>
                 </div>
 
@@ -94,11 +102,12 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Cookies</h3></label>
+                        <h3 id="itemPrice4">Rp 50.000</h3>
                     </div>
                     <div class="quantity">
-                        <button onclick="decrement4()">-</button>
+                        <button type="button" onclick="decrement4()">-</button>
                         <h3 id="itemQuantity4"></h3>
-                        <button onclick="increment4()">+</button>
+                        <button type="button" onclick="increment4()">+</button>
                     </div>
                 </div>
 
@@ -106,11 +115,12 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Various Chocolate</h3></label>
+                        <h3 id="itemPrice5">Rp 75.000</h3>
                     </div>
                     <div class="quantity">
-                        <button onclick="decrement5()">-</button>
+                        <button type="button" onclick="decrement5()">-</button>
                         <h3 id="itemQuantity5"></h3>
-                        <button onclick="increment5()">+</button>
+                        <button type="button" onclick="increment5()">+</button>
                     </div>
                 </div>
 
@@ -118,12 +128,13 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Ice Cream</h3></label>
+                        <h3 id="itemPrice6">Rp 86.000</h3>
                     </div>
                     
                     <div class="quantity">
-                        <button onclick="decrement6()">-</button>
+                        <button type="button" onclick="decrement6()">-</button>
                         <h3 id="itemQuantity6"></h3>
-                        <button onclick="increment6()">+</button>
+                        <button type="button" onclick="increment6()">+</button>
                     </div>
                 </div>
 
@@ -131,12 +142,13 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Brownies</h3></label>
+                        <h3 id="itemPrice7">Rp 95.000</h3>
                     </div>
 
                     <div class="quantity">
-                        <button onclick="decrement7()">-</button>
+                        <button type="button" onclick="decrement7()">-</button>
                         <h3 id="itemQuantity7"></h3>
-                        <button onclick="increment7()">+</button>
+                        <button type="button" onclick="increment7()">+</button>
                     </div>
                 </div>
 
@@ -144,12 +156,13 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Cake</h3></label>
+                        <h3 id="itemPrice8">Rp 105.000</h3>
                     </div>
                     
                     <div class="quantity">
-                        <button onclick="decrement8()">-</button>
+                        <button type="button" onclick="decrement8()">-</button>
                         <h3 id="itemQuantity8"></h3>
-                        <button onclick="increment8()">+</button>
+                        <button type="button" onclick="increment8()">+</button>
                     </div>
                 </div>
 
@@ -157,12 +170,13 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Donut</h3></label>
+                        <h3 id="itemPrice9">Rp 60.000</h3>
                     </div>
 
                     <div class="quantity">
-                        <button onclick="decrement9()">-</button>
+                        <button type="button" onclick="decrement9()">-</button>
                         <h3 id="itemQuantity9"></h3>
-                        <button onclick="increment9()">+</button>
+                        <button type="button" onclick="increment9()">+</button>
                     </div>
                 </div>
                 
@@ -170,12 +184,13 @@
                     <div class="cont">
                         <input type="checkbox" name="prod" id="prod">
                         <label for="prod"><h3>Chocolate Muffin</h3></label>
+                        <h3 id="itemPrice10">Rp 60.000</h3>
                     </div>
 
                     <div class="quantity">
-                        <button onclick="decrement10()">-</button>
+                        <button type="button" onclick="decrement10()">-</button>
                         <h3 id="itemQuantity10"></h3>
-                        <button onclick="increment10()">+</button>
+                        <button type="button" onclick="increment10()">+</button>
                     </div>
                 </div>
             </div>
@@ -184,8 +199,11 @@
                 <h2>Total :</h2>
                 <h2 id="Price">Rp 0</h2>
             </div>
-            <div class="submit"></div>
-        </div>
+            <div class="submit">
+                <button id="order"><h3>Order</h3></button>
+            </div>
+           
+        </form>
         <script src="purch.js"></script>
     </main>
 

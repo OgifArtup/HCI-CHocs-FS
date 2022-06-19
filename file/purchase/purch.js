@@ -108,7 +108,6 @@ function decrement10 () {
     document.getElementById("itemQuantity10").innerText=quantity10;
 }
 
-
 function increment (total) {
     total = total + 1;
     return total;
