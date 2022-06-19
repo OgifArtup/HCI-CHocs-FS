@@ -5,7 +5,8 @@ main {
 
 .intro_txt{
     position: absolute;
-    width: 50%;
+    width: auto;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.6);
     color: #F0E7DD;
     top: 50%;
