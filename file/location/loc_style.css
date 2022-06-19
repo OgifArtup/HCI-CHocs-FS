@@ -27,10 +27,13 @@ main {
 #loc_right {
     padding: 50px 2%;
     height: auto;
-    gap: 0;
 }
 
 .loc_txt p {
+    padding-bottom: 10px;
+}
+
+.loc_txt h2 {
     padding-bottom: 20px;
 }
 
@@ -55,6 +58,11 @@ main {
     .loc_box {
         height: 300px;
         width: 100%;
+    }
+
+    .map iframe {
+        padding-top: 30px;
+        height: 80%;
     }
 
     .loc_box2 {
