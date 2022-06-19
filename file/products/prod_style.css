@@ -102,8 +102,11 @@ figure {
     }
 
     #prod_name {
-        padding: 15px 0 5px 0;
         font-size: 14px;
+    }
+
+    #desc, #price{
+        font-size: 12px;
     }
 
     .prod_txt{
