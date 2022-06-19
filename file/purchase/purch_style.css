@@ -15,7 +15,6 @@ form {
     background-color: white;
     margin: auto;
     width: 60%;
-    border: 5px solid #704E2E;
     padding: 50px;
     color: black;
 }
@@ -56,6 +55,12 @@ form {
 .price {
     display: flex;
     justify-content: space-between;
+}
+
+.errorMsg {
+    padding: 20px;
+    text-align: center;
+    color: red;
 }
 
 .submit {
