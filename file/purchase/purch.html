@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main_style.css">
-    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="purch_style.css">
 </head>
 <body>
     <header>
@@ -28,9 +28,130 @@
         </nav>
         <script src="../main.js"></script>
     </header>
-    <main>
 
+    <main>
+        <h1>Purchase</h1>
+        <div class="form">
+            <div class="name">
+                <label for="name"><h3>Full name</h3></label>
+                <input type="text" placeholder="Ex : James Bond">
+            </div>
+
+            <div class="adr">
+                <label for="name"><h3>Address</h3></label>
+                <input type="text" placeholder="Country, City, Street Address, Postcode">
+            </div>
+
+            <div class="num">
+                <label for="name"><h3>Phone Number</h3></label>
+                <input type="text" placeholder="Ex : 081234567891">
+            </div>
+
+            <div class="prod">
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Belgian Chocolate</h3></label>
+                    <div class="quantity">
+                        <button id="minus1" onclick="decrement1()">-</button>
+                        <h3 id="itemQuantity1"></h3>
+                        <button id="plus1" onclick="increment1()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Blocks</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement2()">-</button>
+                        <h3 id="itemQuantity2"></h3>
+                        <button onclick="increment2()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Balls</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement3()">-</button>
+                        <h3 id="itemQuantity3"></h3>
+                        <button onclick="increment3()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Cookies</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement4()">-</button>
+                        <h3 id="itemQuantity4"></h3>
+                        <button onclick="increment4()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Various Chocolate</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement5()">-</button>
+                        <h3 id="itemQuantity5"></h3>
+                        <button onclick="increment5()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Ice Cream</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement6()">-</button>
+                        <h3 id="itemQuantity6"></h3>
+                        <button onclick="increment6()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>hocolate Brownies</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement7()">-</button>
+                        <h3 id="itemQuantity7"></h3>
+                        <button onclick="increment7()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Cake</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement8()">-</button>
+                        <h3 id="itemQuantity8"></h3>
+                        <button onclick="increment8()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Donut</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement9()">-</button>
+                        <h3 id="itemQuantity9"></h3>
+                        <button onclick="increment9()">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <input type="checkbox" name="prod" id="prod">
+                    <label for="prod"><h3>Chocolate Muffin</h3></label>
+                    <div class="quantity">
+                        <button onclick="decrement10()">-</button>
+                        <h3 id="itemQuantity10"></h3>
+                        <button onclick="increment10()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="purch.js"></script>
     </main>
+
     <footer>
         <div class="foot_top">
             <hr>
