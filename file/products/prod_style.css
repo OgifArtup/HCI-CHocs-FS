@@ -20,11 +20,6 @@ main h2{
     background-color: white;
 }
 
-#prod_name {
-    padding: 15px 0 5px 0;
-    font-size: 20px;
-}
-
 figure {
     overflow: hidden;
     width: 300px;
@@ -55,8 +50,22 @@ figure {
     transform: translate(0, -300px);
 }
 
+#prod_name {
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+}
+
+#desc, #price{
+    color: #786851;
+    font-weight: 500;
+}
+
+#desc {
+    padding-bottom: 15px;
+}
+
 #hold{
-    padding: 0 0 15px 0;
+    padding: 15px 0 0 0;
     text-align: center;
     font-size: 12px;
     font-weight: 600;
@@ -99,7 +108,7 @@ figure {
     .prod_txt{
         width: 125px;
         height: 80px;
-        transform: translate(10%, -160%);
+        transform: translate(30%, -160%);
     }
 
     .purc {
@@ -112,12 +121,12 @@ figure {
     }
 
     figure {
-        width: 150px;
+        width: 200px;
         height: 150px;
     }
 
     #prod_img {
-        width: 150px;
+        width: 200px;
         height: 150px;
     }
 }
