@@ -1,5 +1,8 @@
+const form = document.getElementById('form');
+
 var quantity1 = 0;
 document.getElementById("itemQuantity1").innerText=quantity1;
+
 function increment1 () {
     quantity1 = increment(quantity1)
     document.getElementById("itemQuantity1").innerText=quantity1;
@@ -121,3 +124,61 @@ function decrement (total) {
     }
     return total;
 }
+
+function sumTotal() {
+    var sum = quantity1 + quantity2 + quantity3 + quantity4 + quantity5 + quantity6 + quantity7 + quantity8 + quantity9 + quantity10;
+    return document.getElementById("Price").innerHTML= "Rp " + sum;
+}
+
+
+// Form Validations
+const name = document.getElementById('name');
+const phonenum = document.getElementById('phoneNum');
+const adr = document.getElementById('adr');
+const date = document.getElementById('date');
+const email = document.getElementById('email');
+const errorElmnt = document.getElementById('errorMsg');
+
+form.addEventListener('submit', (e) => {
+    let msg = []
+    if (name.value === ''){
+        msg.push('Please fill your name!')
+    }
+    
+    if (name.value.length < 3){
+        msg.push('Name must be longer than 2 characters!')
+    }
+
+    if (!isNaN(name.value)){
+        msg.push('Name must not contain any number!')
+    }
+
+    if (adr.value === ''){
+        msg.push('Please fill your address!')
+    }
+
+    if (phonenum.value === ''){
+        msg.push('Please fill your phone number!')
+    }
+
+    if (isNaN(phonenum.value)){
+        msg.push('There can be no characters in the phone number!')
+    }
+
+    if (phonenum.value.length > 15 || phonenum.value.length < 10){
+        msg.push('Input a phone number with 10 to 15 digits!')
+    }
+
+    if (email.value === ''){
+        msg.push('Please fill your email!')
+    }
+
+    if (date.value === ''){
+        msg.push('Please choose the delivery date!')
+    }
+
+    if(msg.length > 0){
+        e.preventDefault()
+        errorElmnt.innerText = msg.join('\n')
+    }
+})
