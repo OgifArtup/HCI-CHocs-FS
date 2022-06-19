@@ -23,8 +23,15 @@ form h1 {
     text-align: center;
 }
 
+form input, form textarea {
+    border-width: 1px;
+    border-color: #704E2E;
+    background-color: white;
+    padding: 2px 5px;
+}
+
 .container, .name, .num, .adr, .price, .date, .email{
-    padding-bottom: 20px;
+    padding: 10px 0;
 }
 
 .name input, .num input, .adr input, .email input {
@@ -38,26 +45,53 @@ form h1 {
     margin-top: 5px;
 }
 
-.container {
-
-}
-
 .cont label{
     gap: 10px;
-    display:flex;
     align-items: center;
     padding-bottom: 10px;
 }
 
+.check {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.check_txt {
+    padding-left: 10px;
+}
+
+.check_txt h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.check_txt p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #786851;
+}
+
+.check input {
+    height: 40px;
+}
+
+.cont {
+    padding: 5px;
+}
+
 .quantity {
     display: flex;
-    background-color: white;
     width: 100px;
     justify-content: space-between;
 }
 
 .quantity button {
     width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-color: #704E2E;
+    background-color: white;
+    padding: 2px 5px;
 }
 
 #errorMsg {
@@ -70,14 +104,63 @@ form h1 {
     text-align: center;
 }
 
+
 #order {
     margin-bottom: 40px;
     padding: 10px;
-    width: 100px;
+    width: 150px;
+    border: 0;
+    background-color: #786851;
+    transition: all 0.3s ease-in-out;
 }
 
-.total {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+#order:hover {
+    background-color: #704E2E;
+}
+
+#order h3 {
+    color: #F0E7DD;
+    font-weight: 500;
+}
+
+.prod {
+    margin: 10px 0;
+}
+
+form hr {
+    margin-top: 20px;
+    border: 0;
+    height: 1px;
+    background-color: black;
+}
+
+/* PURCH 2 */
+
+.done {
+    text-align: center;
+    padding: 250px;
+    padding-bottom: 350px;
+}
+
+#thanks {
+    font-size: 48px;
+    font-weight: 600;
+    color: #786851;
+    margin-bottom: 50px;
+}
+
+.button {
+    padding: 0 40%;
+}
+
+#back_button {
+    padding: 15px 0;
+    background-color: #786851;
+    font-weight: 500;
+    color: #F0E7DD;
+    transition: all 0.3s ease-in-out;
+}
+
+#back_button:hover {
+    background-color: #704E2E;
 }
