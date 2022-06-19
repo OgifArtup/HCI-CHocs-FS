@@ -2,12 +2,17 @@ main {
     padding-top: 65px;
 }
 
+main h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+
 button:hover {
     cursor: pointer;
 }
 
 .form {
-    background-color: #FAEDF0;
+    background-color: white;
     margin: auto;
     width: 60%;
     border: 5px solid #704E2E;
