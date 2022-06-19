@@ -28,10 +28,11 @@ button:hover {
     width: 100%;
 }
 
-.container {
+.cont {
     gap: 10px;
-    display: flex;
     align-items: center;
+    display: flex;
+    padding-bottom: 10px;
 }
 
 .quantity {
