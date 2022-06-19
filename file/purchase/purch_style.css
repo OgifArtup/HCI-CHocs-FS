@@ -1,0 +1,8 @@
+main {
+    padding-top: 65px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+}
