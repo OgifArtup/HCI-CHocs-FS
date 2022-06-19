@@ -1,6 +1,6 @@
 
 Home:
-[intro]
+https://unsplash.com/photos/DHYfjAe_eeo
 https://unsplash.com/photos/ssG41C6mwrQ
 https://unsplash.com/photos/CxanIgMF0gU
 https://unsplash.com/photos/w0_w3N_hG00
@@ -19,15 +19,13 @@ https://unsplash.com/photos/c8ovzYe3z0s
 https://unsplash.com/photos/C6eovoS7gXo
 https://unsplash.com/photos/cGDU6AOQrws
 
-Purchase:
-
 About Us:
-[intro2]
-https://unsplash.com/photos/kL2i3PdLGsw (ini ada di design baru)
-[choco1]
-[milk]
-[cocoa]
-[mediteranian]
+https://unsplash.com/photos/XhWntGj2N98
+https://unsplash.com/photos/kL2i3PdLGsw
+https://unsplash.com/photos/ssG41C6mwrQ
+https://unsplash.com/photos/tMsuCz2DgMI
+https://unsplash.com/photos/SCbq6uKCyMY
+https://unsplash.com/photos/SCpXCeUvgdY
 
 Location:
 https://unsplash.com/photos/-Uqvjb0Wqzs
