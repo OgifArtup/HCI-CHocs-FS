@@ -44,3 +44,8 @@ button:hover {
 .quantity button {
     width: 20px;
 }
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
