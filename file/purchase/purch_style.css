@@ -20,11 +20,11 @@ button:hover {
     color: black;
 }
 
-.container, .name, .num, .adr {
+.container, .name, .num, .adr, .email{
     padding-bottom: 20px;
 }
 
-.name input, .num input, .adr input {
+.name input, .num input, .adr input, .email input {
     width: 100%;
 }
 
